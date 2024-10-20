@@ -20,7 +20,28 @@
 
     <a id="downloadLink" style="display:none;">Download Cleaned List</a>
   </div>
+  <script>
+    // Disable right-click context menu
+    document.addEventListener("contextmenu", function (e) {
+      e.preventDefault();
+    });
 
+    // Prevent specific keyboard shortcuts
+    document.onkeydown = function (e) {
+      if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+        return false; // Prevents opening dev tools
+      }
+    };
+
+    // Example obfuscated JavaScript code
+    function obfuscatedFunction() {
+      // const message = "This is an example of obfuscated code!";
+      // alert(message);
+    }
+
+    // Call the obfuscated function
+    obfuscatedFunction();
+  </script>
   <script src="./main.js"></script>
 </body>
 
