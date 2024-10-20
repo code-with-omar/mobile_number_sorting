@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Number Cleaner</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Upload Your List</h1>
+    <p>Must be CSV or XLS format</p>
+
+    <input type="file" id="fileInput" accept=".csv, .xls, .xlsx" />
+    <button onclick="processFile()">Upload & Clean</button>
+
+    <div id="output"></div>
+
+    <a id="downloadLink" style="display:none;">Download Cleaned List</a>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
